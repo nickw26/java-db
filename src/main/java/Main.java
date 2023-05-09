@@ -15,8 +15,8 @@ public class Main {
         Connection connection = config.getConnection();
 
         CallableStatement callableStatement = connection.prepareCall(sqlToCallSP);
-        callableStatement.setString(1, "Arequipa");
-        callableStatement.setString(2, "Perú");
+        callableStatement.setString(1, "Mendoza");
+        callableStatement.setString(2, "Argentina");
         callableStatement.setString(3, "America");
         ResultSet rs = config.getResulSet(callableStatement);
 
